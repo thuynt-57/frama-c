@@ -35,11 +35,11 @@ RUN apt-get update -y \
     libocamlgraph-ocaml-dev \
     libzarith-ocaml \
     libyojson-ocaml-dev \
+    time\
  && rm -rf /var/lib/apt/lists/* \
  && groupadd -r frama-c \
  && useradd --no-log-init -r -g frama-c frama-c
 
 USER frama-c
 WORKDIR /src
-CMD ["time"]
 ENTRYPOINT ["frama-c"]
