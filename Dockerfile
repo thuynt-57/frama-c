@@ -41,4 +41,5 @@ RUN apt-get update -y \
 
 USER frama-c
 WORKDIR /src
+CMD ["time"]
 ENTRYPOINT ["frama-c"]
