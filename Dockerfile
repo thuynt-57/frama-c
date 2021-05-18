@@ -19,7 +19,6 @@ RUN apt-get update -y \
     build-essential \
  && rm -rf /var/lib/apt/lists/* \
  && git clone --single-branch https://git.frama-c.com/pub/frama-c.git . \
- && git checkout -b tags/22.0 \
  && ./configure \
  && make \
  && make install
