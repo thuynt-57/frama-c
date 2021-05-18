@@ -20,7 +20,7 @@ RUN apt-get update -y \
     time\
  && rm -rf /var/lib/apt/lists/* \
  && git clone --single-branch https://github.com/Frama-C/Frama-C-snapshot.git . \
- && git checkout -b tags/20.0 \
+ && git checkout -b tags/22.0 \
  && ./configure \
  && make \
  && make install
